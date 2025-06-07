@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Adatopup</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="order.html">Top Up</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Form Top Up</h2>
+    <form id="order-form">
+      <input type="text" id="game" placeholder="Game (contoh: ML)" required/>
+      <input type="text" id="userId" placeholder="ID Player" required/>
+      <input type="text" id="server" placeholder="Server (jika ada)" />
+      <input type="number" id="amount" placeholder="Jumlah Diamond/Koin" required/>
+      <input type="number" id="price" placeholder="Harga (otomatis dihitung)" readonly/>
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+    <p id="msg"></p>
+  </main>
+  <footer><p>&copy; 2025 Adatopup</p></footer>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
